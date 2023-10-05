@@ -1,32 +1,99 @@
-# Prerequisites
-*.d
+using System;
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+namespace ConsoleApp8
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //task1
+            //Calculyator(5, 6, '*');
 
-# Precompiled Headers
-*.gch
-*.pch
+            //task2
+            //  int[] array1 = { 1, 2, 3, 4, 5 };
+            //  int[] array2 = { 6,7,8,9,10,11 };
+            //EqualArrays(array1, array2);
+            //  Console.WriteLine(array2[0]);
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+            //task3
+            //int a = 5;
+            //Console.WriteLine(a);
+            //ChangePositive(a); 
+            //Console.WriteLine(a);
 
-# Fortran module files
-*.mod
-*.smod
+            TekEded2Misli(ref int{1,2,3,4,5 })
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
 
-# Executables
-*.exe
-*.out
-*.app
+
+
+
+        }
+
+        ///Task1
+        // static void Calculyator(int num1, int num2, char opt)
+        //     switch(opt)
+        //     {
+        //         case  '+':
+        //             Console.WriteLine(num2+num2);
+        //             break;
+        //         case '-':
+        //             Console.WriteLine(num2 - num2);
+        //             break;
+        //         case '*':
+        //             Console.WriteLine(num2 * num2);
+        //             break;
+        //         case '%':
+        //             Console.WriteLine(num2 % num2);
+        //             break;
+        //     }
+        // }
+
+        //task2
+        //static void EqualArrays(int[] array1, int[] array2)
+
+        //{
+        //    for (int i = 0; i >= array1.Length; i++)
+        //    {
+        //       array1[0] = array2[0] ;
+        //    }
+
+        //}
+
+
+        //task3
+        //static int ChangePositive( ref int a)
+        //{
+        //    if (a < 0)
+        //    {
+        //        a *= -1;
+        //    }
+        //    return a;     
+
+        //}
+
+
+
+        static void TekEded2Misli(ref int[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] % 2 == 0)
+                {
+                      array[i] = 0;
+
+                }
+                else
+                {
+                    array[i] = i*2;
+                   
+                }
+            }
+
+
+
+
+
+
+
+        }
+    }
